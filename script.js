@@ -34,9 +34,9 @@ function setupTweet() {
 			"Sample tweet!",
 			"Another sample tweet!" ];
 		var tweet = tweets[Math.floor(Math.random() * tweets.length)] // Pick a random tweet
-        var currentTime = new Date()
-        if (currentTime.getHours() == 16 && currentTime.getMinutes() == 20){ // Tweet if it's 4:20
-            sendTweet(tweet); }
+		var currentTime = new Date()
+		if (currentTime.getHours() == 16 && currentTime.getMinutes() == 20){ // Tweet if it's 4:20
+			sendTweet(tweet); }
 	} catch (e) { Logger.log(e.toString()); }
 }
 
